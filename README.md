@@ -12,3 +12,25 @@ This is designed for one-off use to perform a 'data dump' for personal use in pl
 Please refer to the official Edinburgh Festivals [Fringe API](https://api.edinburghfestivalcity.com/documentation/fringe_approval) for use of data for end-user usage.  This requires approval from the Fringe authorities, particularly because many application developers will not have had experience with the particularities of Fringe ticketing and listings and therefore may not be sensitive to all the nuances of presenting and interpreting Fringe listings data in the way audiences expect.
 
 In this instance, the quick hack was done since the data is being obtained for personal use only, and at my own risk.
+
+
+## Set-up
+
+This is built on python 3.6.
+
+```
+# Clone the repository
+git clone https://github.com/dalepotter/edinburgh-fringe-show-data.git
+cd edinburgh-fringe-show-data
+
+# Set up a virtual environment
+python3 -m venv pyenv
+
+# Download requirements
+pip install -r requirements.txt
+```
+
+## Running the CSV downloader
+```
+python fringe-data-to-csv.py
+```
